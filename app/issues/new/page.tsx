@@ -1,9 +1,11 @@
 "use client";
 import React from "react";
 import { Button, TextField } from "@radix-ui/themes";
-import SimpleMDE from "react-simplemde-editor";
+import dynamic from "next/dynamic";
+const SimpleMDE = dynamic(() => import("react-simplemde-editor"), {
+  ssr: false,
+});
 import "easymde/dist/easymde.min.css";
-
 const NewIssuePage = () => {
   return (
     <div className="space-y-3 max-w-xl">
