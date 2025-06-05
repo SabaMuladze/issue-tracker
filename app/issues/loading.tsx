@@ -1,6 +1,5 @@
 import { Skeleton, Table } from "@radix-ui/themes";
 import React from "react";
-import IssueStatusPage from "../components/IssueStatusPage";
 import IssueActions from "./IssueActions";
 
 const LoadingIssuesPage = () => {
