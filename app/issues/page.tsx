@@ -1,9 +1,10 @@
 import React from "react";
-import { Button, Link, Table } from "@radix-ui/themes";
+import { Table } from "@radix-ui/themes";
 import { prisma } from "@/prisma/client";
 import IssueStatusPage from "../components/IssueStatusPage";
 import delay from "delay";
 import IssueActions from "./IssueActions";
+import Link from "../components/Link";
 
 const IssuesPage = async () => {
   const issues = await prisma.issue.findMany();
