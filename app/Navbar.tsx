@@ -48,6 +48,7 @@ const Navbar = () => {
                     src={session.user!.image!}
                     fallback="?"
                     className="cursor-pointer"
+                    referrerPolicy="no-referrer"
                   />
                 </DropdownMenu.Trigger>
                 <DropdownMenu.Content>
